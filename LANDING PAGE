@@ -1,0 +1,284 @@
+HTML CODE:-
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>City Website</title>
+	<link rel="stylesheet" type="text/css" href="LEVEL1(1).css">
+</head>
+<body>
+
+	
+    <nav>
+	<div class="logo"> <h1 style="font-size: 20px;"> India Tourism </h1> </div>
+	<div class="menu">
+		<a href="#" >Home</a>
+		<a href="#">Gallery</a>
+		<a href="#" target="_blank">About</a>
+		<a href="#">Contact</a>
+	</div>
+    </nav>
+
+    <section class="bannercontent">
+	<main>
+			<h3>Welcome To Aurangabad</h3>
+			<h1>Do come and Visit <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
+			<p>"Aurangabad The Historical Places"</p>
+			<a href="https://en.wikipedia.org/wiki/Aurangabad" class="btnone">learn more</a>
+        </main>
+    </section>
+
+    <section class="citycontent">
+        <div class="flex">
+
+            <div class="left">
+            <img src="Bibika.jpg" width="700px" height="500px" alt="" class="resp">
+            </div>
+            <div class="right">
+            <h1>Bibika Maqbara</h1>
+            <p>The Bibi Ka Maqbara is a tomb located in Aurangabad, Maharashtra, India. It was commissioned in 1660 by the Mughal emperor Aurangzeb in the memory of his wife Dilras Banu Begum (posthumously known as Rabia-ud-Daurani) and is considered to be a symbol of Aurangzeb's 'conjugal fidelity'.It bears a striking resemblance to the Taj Mahal, the mausoleum of Aurangzeb's mother, Mumtaz Mahal. Aurangzeb was not much interested in architecture though he had commissioned the small, but elegant, Pearl Mosque at Delhi. Bibi Ka Maqbara is the second largest structure that Aurangzeb has built, the largest being the Badshahi Mosque.</p>
+            <a href="https://en.wikipedia.org/wiki/Bibi_Ka_Maqbara"><input type="button" value="Read More" class="btn"></a>
+            </div>
+        </div>
+        <div class="flex-reverse">
+            <div class="left">
+                <img src="Ajanta.jpg" width="700px" height="500px" class="resp" alt="">
+            </div>
+            
+            <div class="right">
+                <h1>Ajanta</h1>
+                <p>The Ajanta Caves constitute ancient monasteries and worship-halls of different Buddhist traditions carved into a 75-metre (246 ft) wall of rock.The caves also present paintings depicting the past lives and rebirths of the Buddha, pictorial tales from Aryasura's Jatakamala, and rock-cut sculptures of Buddhist deities.Textual records suggest that these caves served as a monsoon retreat for monks, as well as a resting site for merchants and pilgrims in ancient India.While vivid colours and mural wall-painting were abundant in Indian history as evidenced by historical records, Caves 16, 17, 1 and 2 of Ajanta form the largest corpus of surviving ancient Indian wall-painting</p>
+                <a href="https://en.wikipedia.org/wiki/Ajanta_Caves"><input type="button" value="Read More" class="btn"></a>
+            </div>
+        </div>
+        <div class="flex">
+
+            <div class="left">
+            <img src="Devgiri.jpg" width="700px" height="500px" alt="" class="resp">
+            </div>
+            <div class="right">
+            <h1>Devgiri</h1>
+            <p>Devagiri Fort, also known as Daulatabad or Deogiri, is a historic fortified citadel located in Devagiri village near Aurangabad, Maharashtra, India. It was the capital of the Yadava dynasty (9th century–14th century CE), for a brief time the capital of the Delhi Sultanate (1327–1334), and later a secondary capital of the Ahmadnagar Sultanate (1499–1636)</p>
+            <a href="https://en.wikipedia.org/wiki/Daulatabad_Fort"><input type="button" value="Read More" class="btn"></a>
+            </div>
+        </div>
+        <div class="flex-reverse">
+
+            <div class="left">
+                <img src="Panchakki.jpg" width="700px" height="500px" alt="" class="resp">
+                
+            </div>
+            <div class="right">
+                <h1>Panchakki</h1>
+                <p>Panchakki, known as the water mill. This monument is located in Aurangabad, Maharashtra, displays the scientific thought process put in medieval Indian architecture. It was designed to generate energy via water brought down from a spring on a mountain. The building, attached to the dargah of Baba Shah Musafir a Sufi saint is located in a garden near the Mahmud Darvaza and consist of a mosque, a madrassa, a kacheri, a minister's house, a sarai and houses for zananas.</p>
+                <a href="https://en.wikipedia.org/wiki/Panchakki"><input type="button" value="Read More" class="btn"></a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
+
+CSS CODE:-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @keyframes changetext {
+    0% {
+      content: "Bibika Maqbara";
+    }
+    20% {
+      content: "Ajanta";
+    }
+    35% {
+      content: "Devagiri";
+    }
+    60% {
+      content: "Panchakki";
+    }
+    80% {
+      content: "Bibika Maqbara";
+    }
+    100% {
+      content: "Ajanta";
+    }
+  }
+ 
+
+  
+  nav {
+    width: 100%;
+    height: 5rem;
+    color: blue;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F51FF;
+
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: center;
+   
+  }
+  
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: 25%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav .menu a:first-child {
+    color: #00b894;
+  }
+  
+  .bannercontent {
+    background-color: lightgreen;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkblue;
+  }
+  
+  main h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  main h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+  }
+  
+  main p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  main a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  main .btnone {
+    background: yellow;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #00b894;
+    color: white;
+  }
+  
+  
+  .change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: 	#1F51FF;
+  }
+
+  .citycontent
+  {
+    margin: 3rem 0;
+    height: auto;
+    width: 100%;
+    ;
+   
+  }
+.flex
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    margin: 3rem 0;
+}
+.flex-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    margin: 3rem 0;
+}
+  .left
+  {
+    width: 35%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+  }
+
+  .right
+  {
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    width: 35%;
+  }
+  
+  .right h1
+  {
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .right p
+  {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+
+  .btn
+  {
+    padding: 0.6rem;
+    border-radius: 15px;
+    background-color: #00b894;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: orchid;
+    color: white;
+  }
+
+  .resp
+  {
+    max-width: 100%;
+    height: auto;
+  }
